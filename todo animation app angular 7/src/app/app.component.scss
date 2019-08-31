@@ -58,9 +58,13 @@ form .form-control{
 form .form-control:focus{
   box-shadow: 0;
 }
-.so:hover{
- font-size:30px;
- transform: scale(1.5);
- color:#F97300;
-
-}
+.anima-in:hover{
+  //  font-size:30px;
+  transform: scale(1.1);
+  background: black;
+  color: whitesmoke;
+  }
+  .anima-out
+  {
+     transition: all 0.2s ease-in-out 0.2s;
+  }
