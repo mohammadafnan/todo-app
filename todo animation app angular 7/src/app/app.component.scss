@@ -61,10 +61,12 @@ form .form-control:focus{
 .anima-in:hover{
   //  font-size:30px;
   transform: scale(1.1);
-  background: black;
+  background: #f97300;
   color: whitesmoke;
   }
   .anima-out
   {
      transition: all 0.2s ease-in-out 0.2s;
+     background-color: rgb(255, 255, 255);
   }
+

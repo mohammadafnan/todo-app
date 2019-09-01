@@ -1,17 +1,18 @@
- <div class="container">
-    <form [formGroup]="form" (submit)="onSubmit()">
-        <div class="form-group">
-            <h1 class="text-center ">Todo App</h1>
-            <div class="input-group-prepend">
-                <input [formControlName]="'todo'" type="text"  class="form-control" placeholder="Add Todo" name="todo">
-       <span class="input-group-text" (click)="onSubmit()">
-   <i class="material-icons">add</i></span>
-     </div>
-   </div>
-   <div class="data " >
-     <ul  class="list-unstyled ">
-       <li  class="anima-in anima-out"  [@EnterLeave]  *ngFor="let todo of todoArray; let i = index">{{todo}} <i style="color:green;" (click)="onDeleteItem(i)" class="material-icons anima-in anima-out"  >done</i></li >
-     </ul >
-   </div>
- </form>
-</div> 
+<div class="container">
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <div class="form-group">
+      <h1 class="text-center ">Todo App</h1>
+      <div class="input-group-prepend">
+        <input [formControlName]="'todo'" type="text" class="form-control" placeholder="Add Task" name="todo">
+        <span class="input-group-text" (click)="onSubmit()">
+          <i class="material-icons">add</i></span>
+      </div>
+    </div>
+    <div class="data">
+      <mat-card class="anima-in anima-out " [@EnterLeave] *ngFor="let todo of todoArray; let i = index"><i
+          style="color:green; padding-top: 0px;font-size: 30px; cursor: pointer;" (click)="onDeleteItem(i)"
+          class="material-icons ">done</i>{{todo}}  
+      </mat-card>
+    </div>
+  </form>
+</div>
