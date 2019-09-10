@@ -8,13 +8,16 @@ form{
   max-width: 30em;
   margin: 4em auto;
   position: relative;
-  background: #f4f4f4;
+  background: #fffefe;
   padding: 2em 3em;
   overflow: hidden;
+  // border-width: 50px 50px 50px 50px; 
+  // border-color: #F97300;
 }
 form h1{
   font-family: "Raleway";
-  color:#F97300;
+  color:rgb(0, 46, 249);
+  margin-bottom: 25px;
 }
 form input[type=text]::placeholder{
   font-family: "Raleway";
@@ -26,8 +29,8 @@ form .data{
 form .data li{
   background: #fff;
   border-left: 4px solid #F97300;
-  padding: 1em;
-  margin: 1em auto;
+  // padding: 1em;
+  // margin: 1em auto;
   color: #666;
   font-family: "Raleway";
 }
@@ -37,16 +40,20 @@ form .data li i{
   cursor: pointer;
 }
 form .input-group-text{
-  background: #F97300;
+  background: rgb(65, 64, 63);
   border-radius: 50%;
-  width: 5em;
+  // width: 5em;
   height: 5em;
   padding: 1em 23px;
   color: #fff;
-  position: absolute;
-  right: 13px;
-  top: 68px;
+  // position: absolute;
+  // right: 10px;
+  // top: 68px;
+  // bottom: 90px;
   cursor: pointer;
+  // margin-bottom: 20px;
+  // margin-left: 50px;
+  // padding-bottom: 40px;
 }
 form .input-group-text i{
   font-size: 2em;
@@ -61,7 +68,7 @@ form .form-control:focus{
 .anima-in:hover{
   //  font-size:30px;
   transform: scale(1.1);
-  background: #f97300;
+  background: #5b8ff0;
   color: whitesmoke;
   }
   .anima-out
