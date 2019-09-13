@@ -1,14 +1,14 @@
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-body{
-  padding: 0;
-  margin: 0;
-}
+// body{
+//   padding: 0;
+//   margin: 0;
+// }
 form{
   max-width: 30em;
-  margin: 4em auto;
+  margin: 0em auto;
   position: relative;
-  background: #fffefe;
+  background: #fefeff;
   padding: 2em 3em;
   overflow: hidden;
   // border-width: 50px 50px 50px 50px; 
@@ -22,49 +22,58 @@ form h1{
 form input[type=text]::placeholder{
   font-family: "Raleway";
   color:#666;
+  -ms-word-break: break-all;
+    word-break: break-all;
+
+ /* Non standard for WebKit */
+    word-break: break-word;
+
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+    hyphens: auto;
 }
-form .data{
-  margin-top: 1em;
-}
-form .data li{
-  background: #fff;
-  border-left: 4px solid #F97300;
-  // padding: 1em;
-  // margin: 1em auto;
-  color: #666;
-  font-family: "Raleway";
-}
-form .data li i{
-  float: right;
-  color: #888;
-  cursor: pointer;
-}
-form .input-group-text{
-  background: rgb(65, 64, 63);
-  border-radius: 50%;
-  // width: 5em;
-  height: 5em;
-  padding: 1em 23px;
-  color: #fff;
-  // position: absolute;
-  // right: 10px;
-  // top: 68px;
-  // bottom: 90px;
-  cursor: pointer;
-  // margin-bottom: 20px;
-  // margin-left: 50px;
-  // padding-bottom: 40px;
-}
-form .input-group-text i{
-  font-size: 2em;
-}
-form .form-control{
-  height: 3em;
-  font-family: "Raleway";
-}
-form .form-control:focus{
-  box-shadow: 0;
-}
+// form .data{
+//   margin-top: 1em;
+// }
+// form .data li{
+//   background: #fff;
+//   border-left: 4px solid #F97300;
+//   // padding: 1em;
+//   // margin: 1em auto;
+//   color: #666;
+//   font-family: "Raleway";
+// }
+// form .data li i{
+//   float: right;
+//   color: #888;
+//   cursor: pointer;
+// }
+// form .input-group-text{
+//   background: rgb(65, 64, 63);
+//   border-radius: 50%;
+//   // width: 5em;
+//   height: 5em;
+//   padding: 1em 23px;
+//   color: #fff;
+//   // position: absolute;
+//   // right: 10px;
+//   // top: 68px;
+//   // bottom: 90px;
+//   cursor: pointer;
+//   // margin-bottom: 20px;
+//   // margin-left: 50px;
+//   // padding-bottom: 40px;
+// }
+// form .input-group-text i{
+//   font-size: 2em;
+// }
+// form .form-control{
+//   height: 3em;
+//   font-family: "Raleway";
+// }
+// form .form-control:focus{
+//   box-shadow: 0;
+// }
 .anima-in:hover{
   //  font-size:30px;
   transform: scale(1.1);
@@ -74,6 +83,23 @@ form .form-control:focus{
   .anima-out
   {
      transition: all 0.2s ease-in-out 0.2s;
-     background-color: rgb(255, 255, 255);
+     background-color: rgb(243, 243, 243);
+     margin-top: 3%;
+     -ms-word-break: break-all;
+    word-break: break-all;
+
+ /* Non standard for WebKit */
+    word-break: break-word;
+
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+    hyphens: auto;
   }
 
+  .add{
+    margin-left: 10%;
+    margin-top: 2%;
+    cursor: pointer;
+  }
+
+ 
