@@ -1,20 +1,35 @@
 <!-- <div ><img style="height: 100px" src="assets/images/1 image.jpg">  -->
 
-<div class="container">
+<div>
   <form [formGroup]="form" (submit)="onSubmit()">
-    <div class="form-group">
+    <div>
       <h1 class="text-center ">Todo App</h1>
-      <div class="input-group-prepend">
-        <input   [formControlName]="'todo'" type="text" class="form-control" placeholder="Add Task" name="todo">
-          <i title="Task add" (click)="onSubmit()" class="material-icons  add">add</i>
+      <div class="row">
+        <div class="col-sm-4 ">
+        </div>
+        <div class="col-lg-4 "> <input [formControlName]="'todo'" type="text" class="form-control"
+            placeholder="Add Task" name="todo">
+        </div>
+        <div class="col-sm-4 "> <i title="Task add" (click)="onSubmit()" class="material-icons  add">add</i>
+        </div>
       </div>
     </div>
-    <div class="data">
-      <mat-card class="anima-in anima-out " [@EnterLeave] *ngFor="let todo of todoArray; let i = index"><i
-          style="color:green; padding-top: 0px;font-size: 30px; cursor: pointer;" (click)="onDeleteItem(i)"
-          class="material-icons ">done</i>{{todo}}
-      </mat-card>
+    <div>
+      <mat-grid-list cols="4">
+        <mat-grid-tile *ngFor="let todo of todoArray; let i = index">
+          <mat-card class="anima-in anima-out " (click)="onDeleteItem(i)">{{todo}}
+          </mat-card>
+        </mat-grid-tile>
+
+
+      </mat-grid-list>
+
     </div>
   </form>
+
 </div>
+
 <!-- </div> -->
+<!-- [@EnterLeave]  -->
+<!-- <i style="color:green; padding-top: 0px;font-size: 30px; cursor: pointer;"
+          (click)="onDeleteItem(i)" class="material-icons ">done</i> -->
