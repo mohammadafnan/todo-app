@@ -1,30 +1,28 @@
 <!-- <div ><img style="height: 100px" src="assets/images/1 image.jpg">  -->
 
-<div>
-  <form [formGroup]="form" (submit)="onSubmit()">
-    <div>
-      <h1 class="text-center ">Todo App</h1>
-      <div class="row">
-        <div class="col-sm-4 ">
-        </div>
-        <div class="col-lg-4 "> <input [formControlName]="'todo'" type="text" class="form-control"
-            placeholder="Add Task" name="todo">
-        </div>
-        <div class="col-sm-4 "> <i title="Task add" (click)="onSubmit()" class="material-icons  add">add</i>
-        </div>
+<div class="back" >
+  <form [formGroup]="form" (submit)="onSubmit()" >
+    <div style="margin-top: 1%;">
+      <h1 class="text-center">Todo App</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 ">
+      </div>
+      <div class="col-lg-4 "> <input [formControlName]="'todo'" type="text" class="form-control" placeholder="Add Task"
+          name="todo">
+      </div>
+      <div class="col-sm-4 "> <i title="Task add" (click)="onSubmit()" class="material-icons  add">add</i>
       </div>
     </div>
-    <div>
-      <mat-grid-list cols="4">
-        <mat-grid-tile *ngFor="let todo of todoArray; let i = index">
-          <mat-card class="anima-in anima-out " (click)="onDeleteItem(i)">{{todo}}
-          </mat-card>
-        </mat-grid-tile>
+    <mat-grid-list cols="4" rowHeight="3:1" >
+      <mat-grid-tile *ngFor="let todo of todoArray; let i = index">
+        <mat-card class="anima-in anima-out " (click)="onDeleteItem(i)">{{todo}}
+        </mat-card>
+      </mat-grid-tile>
 
 
-      </mat-grid-list>
+    </mat-grid-list>
 
-    </div>
   </form>
 
 </div>
